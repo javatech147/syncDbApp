@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.devtools.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -53,11 +54,18 @@ dependencies {
 
     // room-db
     implementation(libs.room.runtime)
+    // implementation(libs.androidx.hilt.common)
+    // implementation(libs.androidx.hilt.work)
     ksp(libs.room.compilter)
 
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    // hilt
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.work)
+    ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
