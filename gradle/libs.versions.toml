@@ -10,6 +10,8 @@ activity = "1.12.4"
 constraintlayout = "2.2.1"
 viewmodel = "2.10.0"
 work_manager = "2.11.1"
+ksp = "2.3.4"
+room_version = "2.8.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,7 +24,10 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 lifecycle-viewmodel-kts = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewmodel" }
 work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "work_manager" }
+room-compilter = { group = "androidx.room", name = "room-compiler", version.ref = "room_version" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room_version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 

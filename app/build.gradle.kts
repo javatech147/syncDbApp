@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.devtools.ksp)
 }
 
 android {
@@ -49,6 +50,10 @@ dependencies {
 
     // work-manager
     implementation(libs.work.runtime.ktx)
+
+    // room-db
+    implementation(libs.room.runtime)
+    ksp(libs.room.compilter)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
