@@ -55,6 +55,10 @@ dependencies {
     implementation(libs.room.runtime)
     ksp(libs.room.compilter)
 
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
